@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+image{
+    display: block;
+}
+
+.inspiration{
+    background: url("../images/body_bg.jpg") no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/*============================section top============*/
+.top{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_container{
+    position: relative;
+}
+
+.bottom_line{
+    background: white;
+    width: 1px;
+    height: calc((100vh - 100%)/2);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom_line:after{
+    content: "";
+    background: url("../images/arrow.svg") no-repeat;
+    width: 90px;
+    height: 67px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top h1, .top h2{
+    line-height: 2.5;
+    color: white;
+    position: relative;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.top h1:after, .top h1:before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: white;
+    position: absolute;
+    left: 0;
+}
+
+.top h1:after{
+    bottom: 0;
+}
+
+.top h1:before{
+    bottom: 4px;
+}
+
+.top_container_btn{
+    border-radius: 30px;
+    background: white;
+    border: 1px solid white;
+    padding: 20px 50px;
+    margin-top: 30px;
+}
+
+.top a{
+    color: black;
+    display: block;
+    text-align: center;
+}
+
+.top_container_btn:hover{
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.top_container_btn:hover a{
+    color: white;
+    transition: 0.3s;
+}
+
+/*=========================inspiration_1===============*/
+.inspiration_1_container{
+    height: 75vh;
+    background: #35b88f url("../images/section2_bg.svg") center no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inspiration_1_container_txt{
+    width: 50%;
+    display: inline-block;
+}
+
+.inspiration_1_container_txt h6{
+    font-size: 2em;
+}
+
+.inspiration_1_container_txt p{
+    margin-top: 40px;
+}
+
+.inspiration_1_container_btn{
+    background: white;
+    border: 1px solid white;
+    padding: 20px 40px;
+    display: inline-block;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+.inspiration_1_container_btn a{
+    color: #35b88f;
+}
+
+.inspiration_1_container_btn:hover{
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.inspiration_1_container_btn:hover a{
+    color: white;
+    transition: 0.3s;
+}
+
+/*=======================inspiration_2, inspiration_3==========*/
+.inspiration_2_container, .inspiration_3_container{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.inspiration_2_container>*, .inspiration_3_container>*{
+    width: 50%;
+    overflow: hidden;
+}
+
+.inspiration_2_container_txt, .inspiration_3_container_txt{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    line-height: 1.5;
+}
+
+.inspiration_2_container_txt h6, .inspiration_3_container_txt h6{
+    font-size: 1.7em;
+    margin-bottom: 30px;
+}
+
+.inspiration_2_container_txt p, .inspiration_3_container_txt p{
+    font-size: 1.2em;
+}
+
+.inspiration_2_container_txt, .inspiration_3_container_txt{
+    background: white;
+}
+
+.inspiration_2_container_img{
+    position: relative;
+}
+
+.inspiration_2_container_img{
+    background: url("../images/section2_img.jpg") right no-repeat;
+    background-size: cover;
+    min-height: 350px;
+}
+
+.inspiration_3_container_img{
+    background: url("../images/section3_img.jpg") right no-repeat;
+    background-size: cover;
+    min-height: 350px;
+}
+
+/*======================section 4===================*/
+.inspiration_4_container{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.inspiration_4_container:after{
+    content: "";
+    height: 100%;
+    width: 1px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inspiration_4_container_img{
+    width: 22%;
+    overflow: hidden;
+    padding: 15px 0;
+}
+
+.inspiration_4_container .line{
+    height: 1px;
+    width: 4%;
+    background: white;
+}
+
+/*=======================section5============*/
+.inspiration_5_container{
+    width: 60%;
+    margin: 0 auto;
+    background: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.inspiration_5_container_txt h6, .inspiration_5_container_txt p{
+    font-size: 1.5em;
+}
+
+.inspiration_5_container_txt p{
+    font-size: 1.3em;
+    padding: 30px 0;
+}
+
+.inspiration_5_container_form_itm{
+    width: 100%;
+}
+
+.inspiration_5_container_form_itm>*{
+    padding: 20px;
+    background: #f1f1f1;
+    border: none;
+}
+
+.inspiration_5_container_form_itm:first-child{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.inspiration_5_container_form_itm:first-child>*{
+    width: 48%;
+}
+
+.inspiration_5_container_form_itm>textarea{
+    width: 100%;
+}
+
+.inspiration_5_container_btn{
+    background: #35b88f;
+    padding: 20px 40px;
+    display: inline-block;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+.inspiration_5_container_btn a{
+    color: white;
+}
+
+.inspiration_5_container_btn:hover{
+    background: #45c89f;
+}
+
+.inspiration_5 .line{
+    height: 70px;
+    width: 1px;
+    background: white;
+    margin: 0 auto;
+}
+
+/*====================footer===============*/
+footer{
+    color: white;
+    margin: 0 auto;
+}
+
+footer>*{
+    text-align: center;
+}
+
+.footer_social_med_itms{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    width: 300px;
+    margin: 0 auto 40px;
+    border: 1px solid white;
+    border-radius: 70px;
+}
+
+.footer_social_med_itm svg{
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
+
+.footer_social_med_itm:hover svg{
+    fill: #35b88f;
+    transition: 0.2s;
+}
+
+/*=================================line===========*/
+.inspiration_1 .bottom_line, .inspiration_2 .bottom_line, .inspiration_3 .bottom_line, .inspiration_4 .bottom_line{
+    height: 25vh;
+    position: relative;
+}
+
+body{
+    min-width: 700px;
+}
